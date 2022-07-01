@@ -63,6 +63,7 @@
     border-radius: 25px;
     transform: scale(1.5);
     filter: brightness(1.75);
+    filter: contrast(1.5);
 }
 
 .ex-10-icon {
@@ -93,4 +94,63 @@
         transform: rotate(0);
     }
 }
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: topwhitebutton;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes topwhitebutton {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: 70%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: bottomwhitebutton;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes bottomwhitebutton {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 70%;
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: topwhite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+@keyframes topwhite {
+    0% {
+        left: 10%;
+        top: -10%;
+    }
+    30% {
+        left: 70%;
+        top: -100%;
+    }
+    50% {
+        left: 70%;
+        top: -100%;
+    }
+    100% {
+        left: 10%;
+        top: -10%;
+    }
+}
+
+
 
